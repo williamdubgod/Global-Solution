@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;700&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Archivo", sans-serif;
+  color: whitesmoke;
+}
+
+nav {
+  background-color: blueviolet;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+strong {
+  margin-right: 145vh;
+}
+
+li a {
+  margin-left: 30px;
+  font-family: "Archivo", sans-serif;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+a:hover {
+  color: rgb(255, 0, 200);
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/home_image.jpg);
+}
+
+section a {
+  font-family: "Archivo", sans-serif;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+div {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+footer {
+  background-color: blueviolet;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+p {
+  font-family: "Archivo", sans-serif;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+footer li {
+  margin-left: 30px;
+  font-family: "Archivo", sans-serif;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.divForm {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/login_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  width: 30%;
+  height: 70%;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+label {
+  margin-left: 10%;
+  margin-bottom: 2%;
+  font-size: 20px;
+}
+
+input {
+  width: 80%;
+  height: 6%;
+  margin-left: 10%;
+}
+
+.input {
+  margin-bottom: 20%;
+  border: 0;
+  border-bottom: 1px solid antiquewhite;
+  outline: 0;
+  background: transparent;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+#btn {
+  border: none;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  transition: 0.3s;
+  font-family: "Archivo", sans-serif;
+  font-size: 18px;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgb(255, 0, 200);
+  color: antiquewhite;
+}
+
+span {
+  text-align: center;
+}
+
+#registrar {
+  color: antiquewhite;
+  text-align: center;
+  margin-top: 1px;
+  font-size: 15px;
+}
+
+#registrar:hover {
+  color: rgb(253, 48, 154);
+}

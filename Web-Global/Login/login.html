@@ -1,113 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="../Home/style.css">
-    <style>
-        div {
-           width: 100%;
-           height: 100%;
-           background-image: url(../img/login_image.jpg);
-           background-repeat: no-repeat;
-           background-size: cover;
-           background-position: center;
-        }
-
-        form {
-            width: 30%;
-            height: 60%;
-            background-color: blueviolet;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            overflow: hidden;
-            border-radius: 20px;
-            opacity: 0.9;
-        }
-
-        label {
-            margin-left: 10%;
-            margin-bottom: 2%;
-            font-size: 20px;
-        }
-
-        input {
-            width: 80%;
-            height: 6%;
-            margin-left: 10%;
-        }
-
-        .input {
-            margin-bottom: 20%;
-            border: 0;
-            border-bottom: 1px solid antiquewhite;
-            outline: 0;
-            background: transparent;
-            color: antiquewhite;
-            font-size: 20px;
-        }
-
-        #btn {
-            border: none;
-            background-color: antiquewhite;
-            border-radius: 20px;
-            margin-bottom: 5%;
-            transition: 0.3s;
-            font-family: 'Archivo', sans-serif;
-            font-size: 18px;
-            color: blueviolet;
-            cursor: pointer;
-        }
-
-        #btn:hover {
-            background-color: rgb(255, 0, 200);
-            color: antiquewhite;
-        }
-
-        span {
-            text-align: center;
-        }
-
-        a {
-            color: antiquewhite;
-            text-align: center;
-            margin-top: 1px;
-            font-size: 15px;
-        }
-
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="../Home/index.html"><strong>Home</strong></a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="../Home/index.html"><strong>Home</strong></a>
+        </li>
+      </ul>
     </nav>
-    <div>
-        <form action="POST">
-            <label for="email">E-Mail</label>
-            <input type="email" class="input" name="email">
-            <label for="senha">Senha</label>
-            <input type="password" class="input" name="senha">
-            <input type="button" value="Entrar" id="btn">
-            <span>Não tem login?</span>
-            <a href="">registre-se</a>
-        </form>
-
+    <div class="divForm">
+      <form action="POST">
+        <label for="email">E-Mail</label>
+        <input type="email" class="input" name="email" />
+        <label for="senha">Senha</label>
+        <input type="password" class="input" name="senha" />
+        <input type="button" value="Entrar" id="btn" />
+        <span>Não tem login?</span>
+        <a id="registrar" href="../Registrar/registrar.html">registre-se</a>
+      </form>
     </div>
     <footer>
-        <p>Feito por</p>
-        <ul>
-            <li>Gustavo Guarnieri - RM: 97100</li>
-            <li>Gustavo Santos - RM: 96687</li>
-            <li>Vinícius Almeida - RM: 96331</li>
-            <li>Vinicius Rodrigues - RM: 97473</li>
-            <li>William Vulcano - RM: 96939</li> 
-        </ul>
+      <p>Feito por</p>
+      <ul>
+        <li>Gustavo Guarnieri - RM: 97100</li>
+        <li>Gustavo Santos - RM: 96687</li>
+        <li>Vinícius Almeida - RM: 96331</li>
+        <li>Vinicius Rodrigues - RM: 97473</li>
+        <li>William Vulcano - RM: 96939</li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>

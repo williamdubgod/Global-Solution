@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Registrar</title>
+    <style>
+      form {
+        width: 40%;
+        height: 82%;
+      }
+
+      .input {
+        margin-bottom: 3%;
+        height: 4%;
+      }
+
+      #btn {
+        margin-top: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../Home/index.html"><strong>Home</strong></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="divForm">
+      <form action="POST">
+        <label for="nome">Nome</label>
+        <input type="text" class="input" name="nome" required />
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" class="input" name="sobrenome" required />
+        <label for="endereço">Endereço</label>
+        <input type="text" class="input" name="endereco" required />
+        <label for="email">E-Mail</label>
+        <input type="email" class="input" name="email" required />
+        <label for="senha">Senha</label>
+        <input type="password" class="input" name="senha" required />
+        <label for="senha">Confirmar senha</label>
+        <input type="password" class="input" name="confirmarSenha" required />
+        <input type="submit" value="Enviar" id="btn" />
+      </form>
+    </div>
+    <footer>
+      <p>Feito por</p>
+      <ul>
+        <li>Gustavo Guarnieri - RM: 97100</li>
+        <li>Gustavo Santos - RM: 96687</li>
+        <li>Vinícius Almeida - RM: 96331</li>
+        <li>Vinicius Rodrigues - RM: 97473</li>
+        <li>William Vulcano - RM: 96939</li>
+      </ul>
+    </footer>
+  </body>
+</html>
