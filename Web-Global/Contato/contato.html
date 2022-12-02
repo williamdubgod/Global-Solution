@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Contato</title>
+    <style>
+        .divForm div {
+            width: 20%;
+            height: 50%;
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 20px;
+            opacity: 0.9;
+        }
+
+       div ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+       div li {
+            margin-bottom: 10%;
+            transition: 0.1s;
+        }
+
+        div li:hover {
+            font-size: 20px;
+            cursor: pointer;
+            color: palevioletred;
+        }
+
+        p {
+            margin-bottom: 15%;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 720px) {
+        .divForm div {
+            width: 40%;
+            height: 90%;
+        }
+
+        li {
+            font-size: 10px;
+        }
+
+        div li:hover {
+            font-size: 12px;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li>
+            <a href="../Home/index.html"><strong>Home</strong></a>
+          </li>
+        <li style="position: absolute; right: 0; margin-right: 25px;"><a href="../Login/login.html">Login</a></li>
+        <li style="position: absolute; right: 0; margin-right: 100px;"><a href="../Registrar/registrar.html">Registrar</a></li>
+        <li style="position: absolute; right: 0; margin-right: 215px;"><a href="../Vagas/vagas.html">Vagas</a></li>
+        <li style="position: absolute; right: 0; margin-right: 300px;"><a href="../Contato/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="divForm">
+        <div>
+            <p>Contato</p>
+            <ul>
+                <li>Gustavo Guarnieri - RM: 97100</li>
+                <li>Gustavo Santos - RM: 96687</li>
+                <li>Vinícius Almeida - RM: 96331</li>
+                <li>Vinicius Rodrigues - RM: 97473</li>
+                <li>William Vulcano -  RM: 96939</li>
+            </ul>
+        </div>
+      </div>
+</body>
+</html>

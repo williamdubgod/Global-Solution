@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Cadastro concluído</title>
+    <style>
+        .divForm div {
+            width: 20%;
+            height: 30%;
+            background-color: blueviolet;
+            border-radius: 20px;
+            opacity: 0.9;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 20px;   
+        }
+
+        button {
+            height: 15%;
+            width: 80%;
+        }
+
+        button a:hover {
+            color: whitesmoke;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 720px) {
+          .divForm div {
+            width: 60%;
+            height: 70%;
+          }
+          h1 {
+            font-size: 15px;
+          }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li>
+            <a href="../Home/index.html"><strong>Home</strong></a>
+          </li>
+        <li style="position: absolute; right: 0; margin-right: 25px;"><a href="../Login/login.html">Login</a></li>
+        <li style="position: absolute; right: 0; margin-right: 100px;"><a href="../Registrar/registrar.html">Registrar</a></li>
+        <li style="position: absolute; right: 0; margin-right: 215px;"><a href="../Vagas/vagas.html">Vagas</a></li>
+        <li style="position: absolute; right: 0; margin-right: 300px;"><a href="../Contato/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="divForm">
+        <div id="cadastro-concluido">
+            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="80" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M54.5,201.5c-9.2-9.2-3.1-28.5-7.8-39.8S24,140.5,24,128s17.8-22,22.7-33.7-1.4-30.6,7.8-39.8S83,51.4,94.3,46.7,115.5,24,128,24s22,17.8,33.7,22.7,30.6-1.4,39.8,7.8,3.1,28.5,7.8,39.8S232,115.5,232,128s-17.8,22-22.7,33.7,1.4,30.6-7.8,39.8-28.5,3.1-39.8,7.8S140.5,232,128,232s-22-17.8-33.7-22.7S63.7,210.7,54.5,201.5Z" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><polyline points="172 104 113.3 160 84 132" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+            <h1>Cadastro Realizado com Sucesso!</h1>
+            <button class="btn"><a href="../Home/index.html">Acessar minha conta</a></button>
+        </div>
+      </div>
+      <footer>
+        <p>Feito por</p>
+        <ul>
+          <li>Gustavo Guarnieri</li>
+          <li>Gustavo Santos</li>
+          <li>Vinícius Almeida</li>
+          <li>Vinicius Rodrigues</li>
+          <li>William Vulcano</li>
+        </ul>
+      </footer>
+</body>
+</html>

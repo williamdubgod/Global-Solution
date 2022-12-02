@@ -8,8 +8,65 @@
     <link rel="stylesheet" href="../CSS/style.css" />
     <title>Vagas</title>
     <style>
+
+      form {
+        width: 20%;
+        height: 50%;
+      }
+
       .divForm {
         background-image: url(../img/mapa_image.jpg);
+      }
+
+      .input {
+        margin-bottom: 3%;
+        height: 4%;
+      }
+
+      .btn {
+        margin-top: 15%;
+      }
+
+      select {
+        width: 80%;
+        height: 6%;
+        margin-left: 10%;
+        margin-bottom: 25px;
+        background-color: whitesmoke;
+        color: blueviolet;
+        font-family: "Archivo", sans-serif;
+        font-size: 15px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 720px) {
+        select {
+          font-size: 10px;
+        }
+        
+        form {
+          width: 40%;
+          height: 90%;
+        }
+
+        .input {
+          height: 10px;
+        }
+
+        .btn {
+          font-size: 14px;
+        }
+
+        label {
+          font-size: 10px;
+        }
+
+        li a {
+          font-size: 14px;
+        }
+
+        footer li {
+          font-size: 14px;
+        }
+
       }
     </style>
   </head>
@@ -19,27 +76,61 @@
         <li>
           <a href="../Home/index.html"><strong>Home</strong></a>
         </li>
-        <li><a href="../Login/login.html">Login</a></li>
-        <li><a href="../Registrar/registrar.html">Registrar</a></li>
-        <li><a href="">Contato</a></li>
+        <li style="position: absolute; right: 0; margin-right: 25px;"><a href="../Login/login.html">Login</a></li>
+        <li style="position: absolute; right: 0; margin-right: 100px;"><a href="../Registrar/registrar.html">Registrar</a></li>
+        <li style="position: absolute; right: 0; margin-right: 215px;"><a href="../Vagas/vagas.html">Vagas</a></li>
+        <li style="position: absolute; right: 0; margin-right: 300px;"><a href="../Contato/contato.html">Contato</a></li>
       </ul>
     </nav>
     <div class="divForm">
-      <form action="POST">
-        <label for="nome">Nome</label>
-        <input type="text" class="input" name="nome" required />
-        <label for="sobrenome">Sobrenome</label>
-        <input type="text" class="input" name="sobrenome" required />
-        <label for="endereço">Endereço</label>
-        <input type="text" class="input" name="endereco" required />
-        <label for="email">E-Mail</label>
-        <input type="email" class="input" name="email" required />
-        <label for="senha">Senha</label>
-        <input type="password" class="input" name="senha" required />
-        <label for="senha">Confirmar senha</label>
-        <input type="password" class="input" name="confirmarSenha" required />
-        <input type="submit" value="Enviar" id="btn" />
+      <form action="#">
+        <label for="estado">Selecione seu Estado</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecionar</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+      </select>
+      <label for="cidade">Cidade</label>
+      <input type="text" class="input" name="cidade" required>
+      <label for="cep">Cep</label>
+      <input type="number" class="input" name="cep" required>
+      <input type="submit" value="Achar vagas" class="btn">
       </form>
     </div>
+    <footer>
+      <p>Feito por</p>
+      <ul>
+        <li>Gustavo Guarnieri</li>
+        <li>Gustavo Santos</li>
+        <li>Vinícius Almeida</li>
+        <li>Vinicius Rodrigues</li>
+        <li>William Vulcano</li>
+      </ul>
+    </footer>
   </body>
 </html>

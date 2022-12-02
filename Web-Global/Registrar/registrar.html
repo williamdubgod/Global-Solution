@@ -18,8 +18,19 @@
         height: 4%;
       }
 
-      #btn {
+      .btn {
         margin-top: 5%;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 720px) {
+        form {
+        width: 40%;
+        height: 90%;
+      }
+
+      label {
+        font-size: 10px;
+      }
       }
     </style>
   </head>
@@ -32,31 +43,38 @@
       </ul>
     </nav>
     <div class="divForm">
-      <form action="POST">
+      <form action="../Cadastro_Realizado/cadastro.html">
         <label for="nome">Nome</label>
-        <input type="text" class="input" name="nome" required />
+        <input type="text" class="input" name="nome" data-tipo="nome" required/>
+
         <label for="sobrenome">Sobrenome</label>
-        <input type="text" class="input" name="sobrenome" required />
-        <label for="endereço">Endereço</label>
-        <input type="text" class="input" name="endereco" required />
+        <input type="text" class="input" name="sobrenome" data-tipo="sobreNome" required/>
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" class="input" name="nascimento" id="nascimento" data-tipo="dataNascimento" required/>
+
         <label for="email">E-Mail</label>
-        <input type="email" class="input" name="email" required />
+        <input type="email" class="input" name="email" data-tipo="email" required/>
+
         <label for="senha">Senha</label>
-        <input type="password" class="input" name="senha" required />
+        <input type="password" class="input" name="senha" id="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres com pelo menos uma letra minúscula e uma maiúscula sem o uso de símbolos" data-tipo="senha" required/>
+
         <label for="senha">Confirmar senha</label>
-        <input type="password" class="input" name="confirmarSenha" required />
-        <input type="submit" value="Enviar" id="btn" />
+        <input type="password" class="input" name="confirmarSenha" id="confirmarSenha" data-tipo="confirmarSenha" required/>
+
+        <input type="submit" value="Enviar" class="btn" />
       </form>
     </div>
     <footer>
       <p>Feito por</p>
       <ul>
-        <li>Gustavo Guarnieri - RM: 97100</li>
-        <li>Gustavo Santos - RM: 96687</li>
-        <li>Vinícius Almeida - RM: 96331</li>
-        <li>Vinicius Rodrigues - RM: 97473</li>
-        <li>William Vulcano - RM: 96939</li>
+        <li>Gustavo Guarnieri</li>
+        <li>Gustavo Santos</li>
+        <li>Vinícius Almeida</li>
+        <li>Vinicius Rodrigues</li>
+        <li>William Vulcano</li>
       </ul>
     </footer>
   </body>
+  <script src="../Js/app.js" type="module"></script>
 </html>
